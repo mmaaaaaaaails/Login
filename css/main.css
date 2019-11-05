@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+
+.sea{
+  background: url(../images/sea.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav{
+  justify-content: space-between;
+}
+
+.nav-item--multy{
+  display: flex;
+  align-items: center;
+}
+
+.nav-link{
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+  color: #6b6c6f;
+}
+
+.login{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: calc(100% - 37px);
+}
+
+.login__title{
+   color: #252529;
+   font-weight: bold;
+   font-size: 25px;
+   margin-bottom: 24px;
+}
+
+.text{
+  text-align: center;
+  margin-top:16px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  color: #6b6c6f;
+}
+
+.icons{
+  position: relative;
+}
+
+.icons__envelope, .icons__key{
+  position: absolute;
+  padding: 17px;
+  color:#dfe2e6;
+}
+
+.icons__eye{
+  position: absolute;
+  right: 0;
+  padding: 17px;
+  color:#dfe2e6;
+}
+
+.form-group .form-control{
+  padding-left:44px;
+  width: 350px;
+  height: 50px;
+}
+
+.btn{
+  height: 50px;
+}
+
+.fPaswword{
+  position: absolute;
+  right: 0;
+}
+
+.fPassword__color{
+  color:#dfe2e6;
+}
+
+input.form-control::-webkit-input-placeholder { color: #dfe2e6; }
+input.form-control::-moz-input-placeholder { color: #dfe2e6; }
+input.form-control::-ms-input-placeholder { color: #dfe2e6; }
+input.form-control::placeholder { color: #dfe2e6; } 
