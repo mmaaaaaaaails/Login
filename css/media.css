@@ -3,94 +3,69 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
-.wrapper{
-  width: 100%;
-  padding: 14px 15px
-}
-  
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     
-.box{
-  margin-bottom: 20px;
-}
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
-.info-video{
-	width: 100%;
-	margin-right: 0;
-	height: auto;
-	margin-top: 20px;
-}
+ 
+ .sea{
+ 	display: none;
+ }
 
-.info-video__title, .info-video__text, .info-video__button{
-	text-align: center;
-}
-
-.videorolik, .numeral__n{
-	margin-top: 20px;
-}
-
-.numeral__text{
-	margin-bottom: 20px;
-}
-
-.project__menu li{
-	margin-left: 15px;
-}
-
-.content__flexbox{
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.square{
-	margin-bottom: 20px;
-	margin-right: 0;
-}
-
-.social{
-	text-align: right;
-}
-
-.property__topic tr, td, .property__topic th{
+.login{
 	display: block;
-	font-size: 18px;
-	text-align: center;
+}
+
+.form-group .form-control{
+	width: 100%;
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-.menu .btn-mobile{
+.login{
+	display: block;
+	margin-top: 20px;
+}
+
+.form-group .form-control{
+	width: 100%;
+}
+
+.nav{
+	position: relative;
+}
+.nav__btn--mobile{
  	display: block;
     font-size: 30px;
-    color: #202020;
-    border: none;
-    background: none;
-    outline: none;
-    margin-left: auto;
+    position: absolute;
+    right: 0;
+  	border: 1px solid white;
+  	margin-top: 5px;
 }
 
-.menu .btn-mobile:hover + ul{
-	display: block;
-}
-
-.header .menu ul{
+.nav-item--multy{
 	display: none;
-}
- 
-.info__title, .info__subtitle{
-	color: white;
+	padding: 0;
+	margin-top: 50px;
+	margin-right: -15px;
 }
 
-.col{
-	display: flex;
-	flex-direction: column;
+.nav-item--multy{
+  list-style-type: none;
+}
+
+.nav-link{
+	font-size: 20px;
+}
+
+.slash{
+	display: none;
 }
 
 /* Custom, iPhone Retina */

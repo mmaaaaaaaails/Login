@@ -23,6 +23,10 @@ body{
   justify-content: space-between;
 }
 
+.nav__btn--mobile{
+  display: none;
+}
+
 .nav-item--multy{
   display: flex;
   align-items: center;
@@ -31,7 +35,6 @@ body{
 .nav-link{
   font-family: Arial;
   font-size: 14px;
-  text-align: center;
   color: #6b6c6f;
 }
 
