@@ -3,57 +3,83 @@
   box-sizing: border-box;
   margin: 0;
   padding:0;
+  font-family: 'Merriweather', sans-serif;
 }
 
-body{
+body {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
 
-
-.sea{
+.sea {
   background: url(../images/sea.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.nav{
+.nav {
   justify-content: space-between;
 }
 
-.nav__btn--mobile{
-  display: none;
+.nav-item {
+  position: relative;
 }
 
-.nav-item--multy{
+.nav-item::before {
+	position: absolute;
+  left: 50%;
+	content: '';
+	height: 40px;
+	height: 5px;
+  background: crimson;
+  transition: all 0.5s linear;
+  width: 0;
+  bottom: 0;
+}
+
+.nav-item:hover::before {
+  width: 60px;
+  margin-left: -30px;
+}
+
+.nav-item--multy:hover::before {
+  width: 180px;
+  margin-left: -90px;
+}
+
+.nav-item--multy {
   display: flex;
   align-items: center;
 }
 
-.nav-link{
-  font-family: Arial;
-  font-size: 14px;
-  color: #6b6c6f;
+.nav-link {
+  font-size: 18px;
+  color: #021a60;
 }
 
-.login{
+.nav-link:hover {
+  color: crimson;
+  transition: all .3s ease-in;
+}
+
+.login {
   display:flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: calc(100% - 37px);
+  height: calc(100% - 45px);
 }
 
-.login__title{
-   color: #252529;
-   font-weight: bold;
-   font-size: 25px;
-   margin-bottom: 24px;
+.login__title {
+  color: #252529;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 24px;
 }
 
-.text{
+.text {
   text-align: center;
   margin-top:16px;
   font-family: Helvetica;
@@ -62,43 +88,43 @@ body{
   color: #6b6c6f;
 }
 
-.icons{
+.icons {
   position: relative;
 }
 
-.icons__envelope, .icons__key{
+.icons__envelope, .icons__key {
   position: absolute;
   padding: 17px;
   color:#dfe2e6;
 }
 
-.icons__eye{
+.icons__eye {
   position: absolute;
   right: 0;
   padding: 17px;
   color:#dfe2e6;
 }
 
-.form-group .form-control{
+.form-group .form-control {
   padding-left:44px;
   width: 350px;
   height: 50px;
 }
 
-.btn{
+.btn {
   height: 50px;
 }
 
-.fPaswword{
+.fPaswword {
   position: absolute;
   right: 0;
 }
 
-.fPassword__color{
+.fPassword__color {
   color:#dfe2e6;
 }
 
 input.form-control::-webkit-input-placeholder { color: #dfe2e6; }
 input.form-control::-moz-input-placeholder { color: #dfe2e6; }
 input.form-control::-ms-input-placeholder { color: #dfe2e6; }
-input.form-control::placeholder { color: #dfe2e6; } 
+input.form-control::placeholder { color: #dfe2e6; }
